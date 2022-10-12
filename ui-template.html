@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <title>HTML Session</title>
+    <meta name="session for html" content="tutorial on html">
+    <link rel="icon" type="image/png" href="C:\Users\pillaim\Downloads\bell.png">
+    <style>
+        #html-tutorial {
+            color: green;
+            background-color: aqua;
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+
+        .username {
+            color: blueviolet;
+            margin: 30px;
+        }
+
+
+        .span2-alignment {
+            color: yellow;
+        }
+
+        span {
+            color: green;
+        }
+
+        button {
+            padding: 0 20px 0 20px;
+            margin: 0 0 33px 145px;
+            background-color: yellow;
+            border-radius: 6px;
+            width: 150px;
+        }
+
+        .align-text-span {
+            margin-left: 40%;
+        }
+
+        th,
+        td {
+            border: 1px solid green;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            text-align: center;
+        }
+
+        .sub-title {
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+
+        ol.order-style {
+            list-style-type: lower-latin;
+        }
+
+        ul.order-style {
+            list-style-type: square;
+        }
+
+        .div-container {
+            padding-left: 35px;
+            border: 2px solid green;
+            margin-left: 145px
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#page-bottom" title="check href">
+            <h1 id="html-tutorial">HTML Tutorial - Block elements</h1>
+        </a>
+    </div>
+    <div> <span id="span-alignment" class="span2-alignment"> This is the span alignment</span>
+    </div>
+    <div>
+        <table>
+            <tr bgcolor="blue">
+                <td colspan="4">
+                    <h1>Listing the places in the country</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Sl.No</th>
+                <th>Place</th>
+                <th colspan="2">State</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Tag Mahal</td>
+                <td rowspan="2">Delhi</td>
+                <td rowspan="3">India</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Red Fort</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Golden Temple</td>
+                <td>Amritsar</td>
+            </tr>
+        </table>
+    </div>
+
+    <span class="sub-title">Subtitle - inline elements</span>
+    <span>Subtitle II</span>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.</p>
+    <div>
+        <h1>showcasing the h1 tag again</h1>
+        <img src="C:\Users\pillaim\Downloads\bell.png">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <a href="C:\Users\pillaim\Documents\Ed-yoda\new-ui.html" target="_top">click
+            here</a>
+        <a href="https://classroom.edyoda.com/instructor/module-curriculum/FSR300922C/HTML" target="_blank"> Edyoda</a>
+    </div>
+    <button>Click me!</button>
+
+    <div class="div-container">
+        <div>
+            <a name="page-bottom"></a>
+        </div>
+        <h3>Ordered lists</h3>
+        <ol class="order-style">
+            <li>Books</li>
+            <li>Pen</li>
+            <li>pencil</li>
+            <li>ink pen</li>
+        </ol>
+        <h3>Unordered lists</h3>
+        <ul class="order-style">
+            <li>Books</li>
+            <li>Pen</li>
+            <li>pencil</li>
+            <li>sketch pen</li>
+        </ul>
+
+        <h3>Input tag</h3>
+        <div>
+            <span class="username">username: </span><input type="text" placeholder="Enter your username">
+        </div>
+        <br>
+        <div>
+            <span>Password:</span><input type="password" placeholder="Enter password">
+        </div>
+    </div>
+
+</body>
+
+</html>
