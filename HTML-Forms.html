@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Form</title>
+    <style>
+        h1:hover {
+            color: red;
+            font-size: 40px;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        input[type=email] {
+            color: blue;
+        }
+
+        ol ::marker {
+            color: blue;
+            font-size: 18px;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <h1>Registration From</h1>
+            <a href="https://university.edyoda.com/?mn=wljSlRluXHAqa0yK0OGZRVGuRMhsY4g55EQg.qQjsrC5kXS0c2Ltm">the
+                Hypertext</a>
+            <p>This is the sample content to be added in the template</p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+            </ol>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+            </ul>
+
+            <section>
+                <label>Name </label>
+                <input type="text" required minlength="1" maxlength="4">
+            </section>
+            <br>
+            <section>
+                <label>Create Password</label>
+                <input type="password" required>
+            </section>
+            <br>
+            <section>
+                <label>Enter age</label>
+                <input type="number">
+            </section>
+            <br>
+            <section>
+                <label>Email Address</label>
+                <input type="email">
+            </section>
+            <br>
+            <section><label>Contact Number</label>
+                <input type="number" min="1" max="100">
+            </section>
+            <br>
+            <section><label>Date of birth</label>
+                <input type="date">
+            </section>
+            <br>
+            <section>
+                <label>Enter time</label>
+                <input type="datetime-local">
+            </section>
+            <br>
+            <section>
+                <label>Enter month</label>
+                <input type="month">
+            </section>
+            <br>
+            <section>
+                <label>Enter time</label>
+                <input type="time">
+            </section>
+            <br>
+            <section>
+                <label>Upload image</label>
+                <input type="file" accept="video/mp4,video/x-m4v,video/*">
+            </section>
+            <br>
+            <section>
+                <label>Choose Color</label>
+                <input type="color">
+            </section>
+            <br>
+            <br>
+            <section>
+                <label>Enter Search value</label>
+                <input type="search">
+            </section>
+            <br>
+            <section>
+                <label>Choose Range</label>
+                <input type="range" min="0" max="10">
+            </section>
+            <br>
+            <section>
+                <label>Choose Gender</label>
+                <br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </section>
+            <br>
+            <section>
+                <label>Select known language</label>
+                <input type="checkbox"><label>English</label><br>
+                <input type="checkbox"><label>Hindi</label><br>
+                <input type="checkbox"><label>English</label><br>
+            </section>
+            <br>
+            <section>
+                <label>Choose cities</label>
+                <select>
+                    <option>Mumbai</option>
+                    <option>Hyderabad</option>
+                    <option>Delhi</option>
+                </select>
+            </section>
+            <br>
+            <section>
+                <label>Address</label>
+                <br>
+                <textarea></textarea>
+            </section>
+            <br>
+            <input type="checkbox"><label> I agree the t&c</label>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
