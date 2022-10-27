@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .animate-div {
+            width: 200px;
+            height: 100px;
+            background-color: violet;
+            animation-name: simple-div;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-delay: 3s;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes simple-div {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: aqua;
+            }
+
+            25% {
+                background-color: yellow;
+                top: 0px;
+                left: 40%;
+            }
+
+            50% {
+                background-color: blue;
+                top: 300px;
+                left: 40%
+            }
+
+            75% {
+                background-color: green;
+                top: 300px;
+                left: 20%
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+            }
+        }
+
+        h1:active {
+            color: blue;
+            font-size: 40px;
+        }
+
+        h1::first-letter {
+            color: red;
+            font-size: 40px;
+        }
+
+        p::first-line {
+            color: blue;
+        }
+
+        .p-style {
+            color: green;
+            font-size: 40px;
+        }
+
+        p::after {
+            content: url(https://asia.olympus-imaging.com/content/000107506.jpg)
+        }
+
+        ::marker {
+            color: blueviolet;
+            font-size: 40px;
+        }
+
+        ::selection {
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Animating the container
+    </h1>
+    <p>
+        <span class="p-style">this</span> is the mock text content.
+        <br>
+        this is the second line of the mock content editor
+    </p>
+
+    <!-- Animation is changing the style of the element
+        from one style to another style -->
+    <!-- <div class="animate-div"></div> -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</body>
+
+</html>

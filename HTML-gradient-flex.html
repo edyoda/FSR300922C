@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .linear-gradient1 {
+            height: 100px;
+            width: 30%;
+            background-image: linear-gradient(to bottom right, red, blue);
+        }
+
+        .linear-gradient2 {
+            height: 100px;
+            width: 30%;
+            background-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+        }
+
+        .linear-gradient3 {
+            height: 100px;
+            width: 30%;
+            background-image: repeating-linear-gradient(45deg, red, yellow 7%, green 10%);
+        }
+
+        .radial-gradient1 {
+            height: 100px;
+            width: 30%;
+            background-image: radial-gradient(closest-corner at 50% 30%, red 15%, blue 15%, pink 60%);
+        }
+
+        .radial-gradient2 {
+            height: 100px;
+            width: 30%;
+            background-image: repeating-radial-gradient(red, yellow 10%, blue);
+        }
+
+        .flex-content>div {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        .flex-content {
+            background-color: blueviolet;
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap-reverse; */
+            flex-flow: row wrap;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .content-overflowing {
+            width: 250px;
+            height: 200px;
+            border: 1px solid green;
+            overflow-y: scroll;
+        }
+
+        .content-truncation {
+            width: 25%;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+        }
+
+        .content-ellipsis {
+            width: 50%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text Overflow</h1>
+    <div>
+        <p class="content-overflowing">this is the mock content to be showcased in the application to test the text
+            overflow syling this is the mock
+            content to be showcased in the application to test the text overflow sylingthis is the mock content to be
+            showcased in the application to test the text overflow sylingthis is the mock content to be showcased in the
+            application to test the text overflow sylingthis is the mock content to be showcased in the application to
+            test the text overflow sylingthis is the mock content to be showcased in the application to test the text
+            overflow sylingthis is the mock content to be showcased in the application to test the text overflow
+            sylingthis is the mock content to be showcased in the application to test the text overflow sylingthis is
+            the mock content to be showcased in the application to test the text overflow sylingthis is the mock content
+            to be showcased in the application to test the text overflow sylingthis is the mock content to be showcased
+            in the application to test the text overflow sylingthis is the mock content to be showcased in the
+            application to test the text overflow sylingthis is the mock content to be showcased in the application to
+            test the text overflow sylingthis is the mock content to be showcased in the application to test the text
+            overflow sylingthis is the mock content to be showcased in the application to test the text overflow syling
+        </p>
+        <br>
+        <p class="content-truncation">
+            content to be showcased in the application to test the text overflow sylingthis is the mock content to be
+            showcased in the application to test the text overflow sylingthis is the mock content to be showcased in the
+            application to test the text overflow sylingthis is the mock content to be showcased in the application to
+            test the text overflow sylingthis is the mock content to be showcased in the application to test the text
+            overflow sylingthis
+        </p>
+        <p class="content-ellipsis">
+            content to be showcased in the application to test the text overflow sylingthis is the mock content to be
+            showcased in the application to test the text overflow sylingthis is the mock content to be showcased in the
+            application to test the text overflow sylingthis is the mock content to be showcased in the application to
+            test the text overflow sylingthis is the mock content to be showcased in the application to test the text
+            overflow sylingthis
+        </p>
+    </div>
+    <br>
+    <h1>Flex Layout</h1>
+    <div class="flex-content">
+        <div> Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+        <div> Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+    </div>
+    <br>
+    <h1>
+        Linear Gradient
+    </h1>
+    <div class="linear-gradient1">
+        This is linear Gradient element
+    </div>
+    <br>
+    <div class="linear-gradient2">
+
+    </div>
+    <br>
+    <div class="linear-gradient3">
+
+    </div>
+
+    <br>
+    <h1>Radial Gradient</h1>
+    <div class="radial-gradient1">
+
+    </div>
+    <br>
+    <div class="radial-gradient2">
+    </div>
+    <br>
+
+</body>
+
+</html>

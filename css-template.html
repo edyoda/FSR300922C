@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .display-content {
+            display: block;
+        }
+
+        #display-content-inline {
+            display: inline;
+        }
+
+        .content-flex {
+            display: inline-flex;
+            width: 100%;
+        }
+
+        .content1 {
+            width: 40%;
+        }
+
+        .content2 {
+            width: 50%;
+        }
+
+        .section1 {
+            width: 40%;
+            height: 100px;
+            overflow-y: scroll;
+            border: 2px solid red;
+            /* text-align: justify; */
+            word-break: break-all;
+        }
+
+        .section2 {
+            width: 59%;
+            text-overflow: ellipsis;
+            /* word-break: break-all; */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .section3 {
+            -webkit-line-clamp: 5;
+            /* -webkit-line-clamp: 4; */
+            width: 30%;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        .box-styling {
+            background-color: red;
+            width: 30%;
+            padding: 10px 20px 30px 40px;
+            border: 5px solid black;
+            margin: 30px 50px 40px 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-flex">
+        <div class="content1"> this is the first content</div>
+        <div class="content2">this is the second content</div>
+    </div>
+    <div>
+        this is the sample content to test the display styling.<span class="display-content"> display block will always
+            start in a new line and
+            will occupy the full width</span>
+    </div>
+    <div id="display-content-inline">
+        <div> this is the sample content to test the display styling.</div>
+        <div> display inline will always
+            start in a new line and
+            will occupy the full width</div>
+    </div>
+    <br>
+    <div>
+        <div class="section1">
+            this is the sample content to test the display styling. display inline will always this is the sample
+            content to test the display styling. display inline will always this is the sample content to test the
+            display styling. display inline will always this is the sample content to test the display styling. display
+            inline will always this is the sample content to test the display styling. display inline will always this
+            is the sample content to test the display styling. display inline will always this is the sample content to
+            test the display styling. display inline will always this is the sample content to test the display styling.
+            display inline will always this is the sample content to test the display styling. display inline will
+            always this is the sample content to test the display styling. display inline will always
+        </div>
+        <br>
+        <div class="section2">
+            this is the sample content to test the display styling. display inline will always this is the sample
+            content to test the display styling. display inline will always this is the sample content to test the
+            display styling. display inline will always this is the sample content to test the display styling. display
+            inline will always this is the sample content to test the display styling.
+        </div>
+        <br>
+        <div class="section3">
+            this is the sample content to test the display styling. display inline will always this is the sample
+            content to test the display styling. display inline will always this is the sample content to test the
+            display styling. display inline will always this is the sample content to test the display styling. display
+            inline will always this is the sample content to test the display styling.
+        </div>
+        <div>
+            <div>
+
+            </div>
+            <div class="box-styling">this is content</div>
+        </div>
+    </div>
+</body>
+
+</html>
