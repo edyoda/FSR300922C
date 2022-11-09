@@ -135,3 +135,57 @@ const newAr = newValue.reduce((total, value) => {
   return total - value;
 });
 console.log(newAr);
+
+// reverse() -
+// console.log(newValue.reverse());
+
+// includes() - checks if the array contains the specified value in the list
+console.log(newValue.includes(40));
+
+// find() finds and returns  the value of the first element that satisfies the condition
+const newArr = [20, 100, 11, 33, 88, 99, 11];
+const findV = newArr.find((x) => x > 20);
+console.log(findV);
+
+// indexOf() find the index of the particular value of an element in the array
+console.log(newArr.indexOf(400));
+
+// slice() returns the part of the array - create new array - from the existing array
+console.log(newArr.slice(1, 3));
+console.log(newArr.toString());
+
+// loop/ iterating - repitition of a particular function to every item in the array
+console.log(userData);
+for (let i = 0; i < userData.length; i++) {
+  console.log(userData[i].city);
+  if (userData[i].age <= 20) {
+    userData[i].isNotAdult = true;
+  } else {
+    userData[i].isNotAdult = false;
+  }
+  console.log(userData);
+}
+console.log(newArr);
+for (let m = 0; m < newArr.length; m++) {
+  if (newArr[m] > 50) {
+    console.log(newArr[m]);
+  }
+}
+
+// while - the method gets iterated until the condition in the while statement is flase;
+var count = 0;
+while (count < 3) {
+  count++;
+  // console.log(count);
+}
+
+// do while - "do" is a method that handled the operation first and then then the while statement checks for the condition.
+// if the condition in the while statement getz false, then the iteration will stop in the do statement
+
+var counter = 0;
+do {
+  counter++;
+  console.log(counter);
+} while (counter < 5);
+{
+}
