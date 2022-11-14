@@ -114,18 +114,41 @@ console.log("consonents", checkString.length - vowelCount);
 var repeatedList = "successful";
 
 listRepeat = repeatedList.split("");
-console.log(listRepeat);
-var repeatLists = listRepeat.filter((d, j) => listRepeat.indexOf(d) !== j);
+var repeatLists = [];
+for (var i = 0; i < listRepeat.length; i++) {
+  if (
+    listRepeat.indexOf(listRepeat[i]) !== listRepeat.lastIndexOf(listRepeat[i])
+  ) {
+    if (repeatLists.length !== 0 && !repeatLists.includes(listRepeat[i])) {
+      repeatLists.push(listRepeat[i]);
+    } else if (repeatLists.length === 0) {
+      repeatLists.push(listRepeat[i]);
+    }
+  }
+}
 console.log(repeatLists);
 // finding occurance of the characters
 for (var i = 0; i < repeatLists.length; i++) {
-  var repeatCount = 1;
-  for (x = 0; x < repeatLists.length; x++) {
-    if (repeatedList[i] === repeatLists[x]) {
+  var repeatCount = 0;
+  for (x = 0; x < repeatedList.length; x++) {
+    if (listRepeat[i] === repeatedList[x]) {
       repeatCount++;
     }
   }
   console.log(repeatedList[i], repeatCount);
 }
 
-console.log("madam" === "madam");
+// finding permutation
+var list = [];
+function printPermutations(str, res = "") {
+  if (!str.length) {
+    list.push(res);
+  }
+
+  for (let i = 0; i < str.length; i++) {
+    let remStr = str.substr(0, i) + str.substr(i + 1);
+    printPermutations(remStr, res + str.substr(i, 1));
+  }
+}
+printPermutations("abc");
+console.log(list);
